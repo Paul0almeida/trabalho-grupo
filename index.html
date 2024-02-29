@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Aleatório em JavaScript</title>
+    <!-- Inclua o arquivo JavaScript -->
+    <script src="gerar_numeros.js"></script>
+</head>
+<body>
+    <h1>Número Aleatório</h1>
+    <p id="numero-aleatorio"></p>
+
+    <script>
+        // Obtém o elemento HTML onde o número aleatório será exibido
+        var numeroAleatorioElemento = document.getElementById("numero-aleatorio");
+
+        // Gera o número aleatório e o exibe na página
+        var numeroAleatorio = gerarNumeroAleatorio();
+        numeroAleatorioElemento.textContent = "O número aleatório gerado é: " + numeroAleatorio;
+    </script>
+</body>
+</html>
